@@ -21,3 +21,6 @@ ORDER BY
 
 #### Exercise 8: Select job titles per department
 Used the 'DISTINCT' function to avoid duplicates and furthermore added the Count's used to see how many positions there are for each JobTitle.
+
+#### Exercise 9: Select employees with their departments and shifts
+Theirs no specific order when doing joins, the KEY rule is a table alias must already exist before you use it an use the 'ON' keyword.

@@ -17,3 +17,30 @@ FROM HumanResources.Employee as e
 JOIN HumanResources.EmployeeDepartmentHistory as ed
 	ON e.BusinessEntityID = ed.BusinessEntityID
 WHERE e.Gender = 'F';
+
+/*==================================================
+Exercise 08
+==================================================*/
+
+SELECT Distinct(e.JobTitle), COUNT(*) as Number_positions, d.Name as DepartmentName
+FROM HumanResources.Employee as e
+JOIN HumanResources.EmployeeDepartmentHistory as ed
+ON e.BusinessEntityID = ed.BusinessEntityID
+JOIN HumanResources.Department as d
+on ed.DepartmentID = d.DepartmentID
+GROUP BY
+	e.JobTitle,
+	d.Name;
+
+/*==================================================
+Exercise 09
+==================================================*/
+
+SELECT DISTINCT d.Name as DepartmentName, s.Name as ShiftName
+FROM HumanResources.Employee as e
+JOIN HumanResources.EmployeeDepartmentHistory as ed
+	ON e.BusinessEntityID = ed.BusinessEntityID
+JOIN HumanResources.[Shift] as s
+	ON ed.ShiftID = s.ShiftID
+JOIN HumanResources.Department as d
+	ON ed.DepartmentID = d.DepartmentID
