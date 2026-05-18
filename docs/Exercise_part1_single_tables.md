@@ -15,3 +15,6 @@ When requesting between a certain date as in this example, you can't only use th
 
 #### Exercise 4: Select departments whose names match the pattern
 We use the 'LIKE' function as we are searching ofr matches of the text pattern. We also included the '%' wildcard to look for any number of characters
+
+#### Exercise 5: Select departments that belong to certain groups
+The 'IN' keyword is used to consider all available options that contains our restricion of group names.

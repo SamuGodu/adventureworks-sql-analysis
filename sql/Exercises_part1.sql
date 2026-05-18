@@ -33,3 +33,15 @@ SELECT DepartmentID, [Name], GroupName
 FROM HumanResources.Department
 WHERE [Name] LIKE 'Prod%'
 OR GroupName LIKE '%ring';
+
+/*==================================================
+Exercise 05
+==================================================*/
+
+SELECT [Name]
+FROM HumanResources.Department
+WHERE GroupName in ('Research and Development', 'Manufacturing');
+
+/*==================================================
+Exercise 05
+==================================================*/
