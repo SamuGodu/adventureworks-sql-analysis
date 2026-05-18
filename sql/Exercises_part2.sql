@@ -44,3 +44,24 @@ JOIN HumanResources.[Shift] as s
 	ON ed.ShiftID = s.ShiftID
 JOIN HumanResources.Department as d
 	ON ed.DepartmentID = d.DepartmentID
+
+/*==================================================
+Exercise 10
+==================================================*/
+
+SELECT e.BusinessEntityID, d.Name as DepartmentName, d.GroupName as DepatmentGroup, s.Name as ShiftName
+FROM HumanResources.Employee as e
+JOIN HumanResources.EmployeeDepartmentHistory as ed
+	ON e.BusinessEntityID = ed.BusinessEntityID
+JOIN HumanResources.[Shift] as s
+	ON ed.ShiftID = s.ShiftID
+JOIN HumanResources.Department as d
+	ON ed.DepartmentID = d.DepartmentID
+WHERE e.HireDate > '2010-01-01' 
+AND
+d.GroupName IN ('Manufacturing', 'Quality Assurance');
+
+/*==================================================
+Exercise 11
+==================================================*/
+

@@ -24,3 +24,6 @@ Used the 'DISTINCT' function to avoid duplicates and furthermore added the Count
 
 #### Exercise 9: Select employees with their departments and shifts
 Theirs no specific order when doing joins, the KEY rule is a table alias must already exist before you use it an use the 'ON' keyword.
+
+#### Exercise 10: Select employees hired after 2010 with their departments and shifts
+After the 'AND' keyword, I can avoid adding a second pair of 'WHERE' function.
