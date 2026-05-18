@@ -12,3 +12,6 @@ We need to specify the value using quotation marks, and it can equally query bet
 
 #### Exercise 3: Select all employees who joined new departments in 2008
 When requesting between a certain date as in this example, you can't only use the '=' equal sign as it only conisders the first day of the year and you cant use a comparison between '2008' and '2009' as it will consider the first day of the year as well.
+
+#### Exercise 4: Select departments whose names match the pattern
+We use the 'LIKE' function as we are searching ofr matches of the text pattern. We also included the '%' wildcard to look for any number of characters

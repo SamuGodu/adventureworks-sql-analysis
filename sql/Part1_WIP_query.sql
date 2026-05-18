@@ -33,3 +33,4 @@ SELECT DepartmentID, [Name], GroupName
 FROM HumanResources.Department
 WHERE [Name] LIKE 'Prod%'
 OR GroupName LIKE '%ring';
+
