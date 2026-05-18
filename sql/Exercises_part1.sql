@@ -11,3 +11,11 @@ MaritalStatus != 'M';
 /*==================================================
 Exercise 02
 ==================================================*/
+
+SELECT BusinessEntityID, Rate, RateChangeDate 
+FROM HumanResources.EmployeePayHistory
+WHERE Rate >= '50';
+
+/*==================================================
+Exercise 03
+==================================================*/
