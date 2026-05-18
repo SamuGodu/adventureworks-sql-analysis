@@ -11,3 +11,9 @@ JOIN HumanResources.Department as d
 /*==================================================
 Exercise 07
 ==================================================*/
+
+SELECT e.BusinessEntityID as Employee_ID, e.JobTitle, ed.StartDate
+FROM HumanResources.Employee as e
+JOIN HumanResources.EmployeeDepartmentHistory as ed
+	ON e.BusinessEntityID = ed.BusinessEntityID
+WHERE e.Gender = 'F';
