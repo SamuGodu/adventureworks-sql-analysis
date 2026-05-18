@@ -19,3 +19,12 @@ WHERE Rate >= '50';
 /*==================================================
 Exercise 03
 ==================================================*/
+
+SELECT BusinessEntityID, DepartmentID, StartDate
+FROM HumanResources.EmployeeDepartmentHistory
+WHERE StartDate BETWEEN '2008-01-01' AND '2008-12-31' 
+ORDER BY StartDate;
+
+/*==================================================
+Exercise 04
+==================================================*/

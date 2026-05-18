@@ -9,3 +9,6 @@ As the question ask specifically for the employees who are not married, it is ne
 
 #### Exercise 2: Select employees whose pay rate is 50 or more.
 We need to specify the value using quotation marks, and it can equally query between "integers" and "floats"
+
+#### Exercise 3: Select all employees who joined new departments in 2008
+When requesting between a certain date as in this example, you can't only use the '=' equal sign as it only conisders the first day of the year and you cant use a comparison between '2008' and '2009' as it will consider the first day of the year as well.
