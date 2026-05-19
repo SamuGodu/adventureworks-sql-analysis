@@ -20,3 +20,12 @@ Exercise 13
 SELECT Gender, COUNT(*) as NumberofEmployees
 FROM HumanResources.Employee
 GROUP BY Gender
+
+/*==================================================
+Exercise 14
+==================================================*/
+
+SELECT d.GroupName, COUNT(*) as Count
+FROM HumanResources.Department as d
+GROUP BY d.GroupName
+HAVING COUNT(*) > 2;
