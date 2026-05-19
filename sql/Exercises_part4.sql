@@ -28,3 +28,19 @@ FROM (
                 WHERE e2.BusinessEntityID = e.BusinessEntityID
             )
 ) AS cpr;
+
+/*==================================================
+Exercise 18
+==================================================*/
+
+SELECT BusinessEntityID
+FROM HumanResources.Employee
+GROUP BY BusinessEntityID
+HAVING SUM(VacationHours) > 60
+
+UNION
+
+SELECT BusinessEntityID
+FROM HumanResources.Employee
+GROUP BY BusinessEntityID
+HAVING SUM(SickLeaveHours) > 60;
