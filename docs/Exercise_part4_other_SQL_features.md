@@ -12,3 +12,6 @@ This exercise required to apply the same concept as before by adding multiple qu
 
 #### Exercise 18: Select employee IDs with their out-of-office hours
 Utilized the 'UNION' keyword to combine both tables. This way, we make sure to not repeate Employees that pass both conditions.
+
+#### Exercise 19: Select employee IDs with certain job titles and departments
+The INTERSECT operator finds the common output of the two queries – that is, it will output only the  IDs of employees that fulfill the WHERE clause conditions of both queries.

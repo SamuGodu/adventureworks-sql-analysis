@@ -208,4 +208,18 @@ FROM HumanResources.Employee
 GROUP BY BusinessEntityID
 HAVING SUM(SickLeaveHours) > 60;
 
+/*==================================================
+Exercise 19
+==================================================*/
 
+SELECT e.BusinessEntityID
+FROM HumanResources.Employee AS e
+WHERE e.JobTitle IN ('Sales Representative', 'Tool Designer')
+ 
+INTERSECT
+ 
+SELECT edh.BusinessEntityID
+FROM HumanResources.EmployeeDepartmentHistory AS edh
+JOIN HumanResources.Department AS d
+ON edh.DepartmentID = d.DepartmentID
+WHERE d.Name IN ('Sales', 'Marketing');
