@@ -9,3 +9,6 @@ Columns added in the aggregated functions don't tend to autocomplete or provide 
 
 #### Exercise 12: Select the average number of vacation hours per job title
 Depending on the intention of the question or answer, it is neccesary to group by.
+
+#### Exercise 13: Select the count of employees based on their gender
+Again, required to group by using the 'COUNT' functrion this time.
