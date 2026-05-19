@@ -15,3 +15,6 @@ Utilized the 'UNION' keyword to combine both tables. This way, we make sure to n
 
 #### Exercise 19: Select employee IDs with certain job titles and departments
 The INTERSECT operator finds the common output of the two queries – that is, it will output only the  IDs of employees that fulfill the WHERE clause conditions of both queries.
+
+#### Exercise 20: List sales reps and marketing managers with their departments
+Query joins the Employee, EmployeeDepartmentHistory and Department table with multiple joins. Then used the 'WHERE' clause to add the condition regarding the job titles.

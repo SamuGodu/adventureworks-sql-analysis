@@ -223,3 +223,15 @@ FROM HumanResources.EmployeeDepartmentHistory AS edh
 JOIN HumanResources.Department AS d
 ON edh.DepartmentID = d.DepartmentID
 WHERE d.Name IN ('Sales', 'Marketing');
+
+/*==================================================
+Exercise 20
+==================================================*/
+
+SELECT e.BusinessEntityID, e.JobTitle, d.Name
+FROM HumanResources.Employee as e
+JOIN HumanResources.EmployeeDepartmentHistory as edh
+	ON e.BusinessEntityID = edh.BusinessEntityID
+JOIN HumanResources.Department as d
+	ON edh.DepartmentID = d.DepartmentID
+WHERE e.JobTitle in ('Sales Representative', 'Marketing Manager');
