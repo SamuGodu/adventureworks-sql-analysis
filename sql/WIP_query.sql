@@ -137,3 +137,16 @@ SELECT d.GroupName, COUNT(*) as Count
 FROM HumanResources.Department as d
 GROUP BY d.GroupName
 HAVING COUNT(*) > 2;
+
+/*==================================================
+Exercise 15
+==================================================*/
+
+SELECT d.Name, SUM(e.SickLeaveHours) AS SumSickLeaveHours
+FROM HumanResources.Employee AS e
+JOIN HumanResources.EmployeeDepartmentHistory AS edh
+ON e.BusinessEntityID = edh.BusinessEntityID
+JOIN HumanResources.Department AS d
+ON edh.DepartmentID = d.DepartmentID
+WHERE edh.EndDate IS NULL
+GROUP BY d.Name;

@@ -15,3 +15,6 @@ Again, required to group by using the 'COUNT' functrion this time.
 
 #### Exercise 14: Select the count of departments in each group
 In this case, we had to use the 'HAVING' function which goes after the 'GROUP BY'. Also, it is suggested to use the '*' when counting as it is cleaner the using (Name) as I originally did.
+
+#### Exercise 15: Select the sum of sick leave hours for each department
+Did not use the correct column, did not review the schema thoroughlly. Used the Employee.CurrentFlag instead of the EmployeeDepartmentHistory.EndDate.
